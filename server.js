@@ -4,13 +4,18 @@ const app = express();
 
 const port = 8080;
 
-console.log(cells);
+// console.log(cells);
 
 app.use(express.static(path.join(__dirname, 'public')));// подтягиваю выполнение html
 
 app.get('/', (req, res) => {
     res.send('Hello from server');
     app.emit('connection');//вызывю событие присоединения к серверу
+});
+
+app.get('/api/color', (req, res) => {
+    const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    res.send(randomColor);
 });
 
 app.get('/board', (req, res) => {

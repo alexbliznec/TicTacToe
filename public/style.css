@@ -35,3 +35,10 @@
   font: normal 2.25vw/1.3 Arial, sans-serif;
   color: #fff;
 }
+#newButton {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  text-emphasis-color: #000000
+  
+}

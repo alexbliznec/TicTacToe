@@ -13,3 +13,17 @@ function getColor() {
         squard.css('background-color', data);
       });
 }
+
+$(document).ready(function() {
+    $("#newButton").click(function() {
+        changeColor();
+    })
+});
+
+function changeColor() {
+    const nextBox = $("#nextBox");
+
+    $.get( "api/changeColor", function( data ) {
+        nextBox.css('background-color', data);
+      });
+}

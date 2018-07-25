@@ -27,3 +27,13 @@ function changeColor() {
         nextBox.css('background-color', data);
       });
 }
+
+$(document).ready(function() {
+    $("#register").click(function() {
+        showData();
+    })
+});
+
+function showData (){
+   // const data = $("")
+}

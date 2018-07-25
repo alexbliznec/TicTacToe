@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <title></title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="game.js"></script>
 </head>
@@ -23,5 +24,38 @@
     <button id="button">Click me</button>
     
     <button id="newButton">New Button</button>
+<!--<div class="form1">
+    <form action="/register" method="post" id="form1">
+        <label>Имя</label><br>
+        <input type="text" name="userName" /><br><br>
+        <label>Возраст</label><br>
+        <input type="number" name="userAge" /><br><br>
+        <input id="submit" type="submit" value="Отправить" />
+    </form>
+</div>
+    <div id="data"></div>
+    <button id="connect">Connect</button>-->
+    <br style="clear:left;" />
+
+    <div class="center">
+        <form action="/register" method="post" id="registerForm">
+            <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input name="pass" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="register" id="register" class="btn btn-primary">register</button>
+            <button type="Log in" class="btn btn-primay">Log in</button>
+        </form>
+    </div>
+
 </body>
 </html>
